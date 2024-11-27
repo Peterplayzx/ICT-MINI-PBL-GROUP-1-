@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Bio Form</title>
+    <link rel="stylesheet" href="contactcss.css">
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">S.S.S</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="2_About.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="Services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="FAQ.html" class="nav-link">FAQ</a></li>
+            <li class="nav-item"><a href="Contacts.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-search">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+</nav>
+
+    <!-- Form Section -->
+    <div class="form-container">
+        <h2>Your Basic Bio</h2>
+        <p>All the personal details we ask so we can triage and contact you.</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="city">City, State *</label>
+                <input type="text" id="city" name="city" placeholder="City of Residence">
+            </div>
+            <div class="form-group">
+                <label for="country">Country *</label>
+                <input type="text" id="country" name="country" placeholder="Country of Residence">
+            </div>
+            <div class="form-group">
+                <label for="code">Code *</label>
+                <select id="code" name="code">
+                    <option value="+65">MM +95</option>
+                    <option value="+1">US +1</option>
+                    <!-- Add more country codes as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone (Victim) *</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <label for="police-report">Have you filed a police report yet? *</label>
+                <select id="police-report" name="police-report">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <br>
+                <br>
+            </div>
+                <!-- Thanks For Contacting Us Section -->
+    <div class="Contacting">
+      <a href="thanksforcontacting.html" class="contact">Contact Now!</a>
+  </div>
+        </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 <strong>S.S.S</strong>. All rights reserved. | <a href="policy.html">Privacy Policy| 
+        <a href="refrences.html">Refrences</a></p>
+  </footer>
+</body>
+</html>

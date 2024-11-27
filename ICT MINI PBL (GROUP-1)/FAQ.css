@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #CFE5E7;
+    background-image: url('background-pattern.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+    .navbar {
+        width: 100%;
+        background-color: rgba(0, 79, 110, 0.9); 
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+    }
+     
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        max-width: 1200px;
+        margin: auto;
+    }
+     
+    .nav-logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+     
+    .nav-menu {
+        list-style-type: none;
+        display: flex;
+    }
+     
+    .nav-item {
+        margin-left: 1.5rem;
+    }
+     
+    .nav-link {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        position: relative;
+    }
+     
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background: #6BC1D1;
+        transition: width 0.3s ease-in-out;
+    }
+     
+    .nav-link:hover {
+        color: #6BC1D1;
+    }
+     
+    .nav-link:hover::after {
+        width: 100%;
+    }
+     
+    .nav-menu{
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+
+  /* Search bar styling */
+  .nav-search {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 160px;
+}
+
+.search-button {
+    background-color: #9d9d9da2;
+    color: #333;
+    border: none;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+}
+
+.nav-menu{
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.search-button:hover {
+    background-color: #9d9d9da2;}
+
+header .navbar {
+    background-color: #004F6E;
+    color: #fff;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header .nav-link:hover {
+    background-color: #056D91;
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-container {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: linear-gradient(to bottom, rgba(0, 79, 110, 0.8), rgba(0, 79, 110, 0.5)), center/cover no-repeat;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background: #056D91;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 4px solid #004F6E;
+    border-radius: 0 0 5px 5px;
+    margin-top: 5px;
+}
+
+.faq-answer.show {
+    display: block;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+footer {
+
+    text-align: center;
+
+    padding: 15px 0;
+
+    background: #004F6E; 
+
+    color: #fff;
+
+    position: relative;
+
+    bottom: 0;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+}
+
+footer a {
+
+    color: #6BC1D1;
+
+    text-decoration: none;
+
+}
+
+footer a:hover {
+
+    text-decoration: underline;
+
+}
+

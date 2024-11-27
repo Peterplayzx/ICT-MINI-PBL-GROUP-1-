@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Anti-Scamming Initiative</title>
+    <link rel="stylesheet" href="FAQ.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .faq-section {
+            width: 80%;
+            margin: 2em auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            padding: 1em;
+            cursor: pointer;
+            background-color: #f7f7f7;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 1em;
+            background-color: #fff;
+            display: none;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked ~ .faq-answer {
+            display: block;
+        }
+
+        input[type="checkbox"]:checked + label .arrow {
+            transform: rotate(180deg);
+        }
+
+        .arrow {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">S.S.S</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="2_About.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="Services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="FAQ.html" class="nav-link">FAQ</a></li>
+                    <li class="nav-item"><a href="Contacts.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-search">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-button">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="faq-section">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <input type="checkbox" id="faq1">
+                    <label for="faq1" class="faq-question">
+                        What is phishing? <span class="arrow">▼</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Phishing is a scam where attackers pose as trustworthy entities to steal sensitive information like passwords, credit card numbers, or personal details.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq2">
+                    <label for="faq2" class="faq-question">
+                        How can I recognize a scam email? <span class="arrow">▼</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Scam emails often have urgent requests, poor grammar, suspicious links, and requests for personal or financial details. Verify the sender before taking action.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq3">
+                    <label for="faq3" class="faq-question">
+                        What should I do if I’ve been scammed? <span class="arrow">▼</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>If you've been scammed, report it to your local authorities, block the scammer, and inform your bank if financial information was compromised.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq4">
+                    <label for="faq4" class="faq-question">
+                        Are scam phone calls common? <span class="arrow">▼</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Yes, scam calls are very common. These often involve fake offers, threats, or impersonations of government agencies.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq5">
+                    <label for="faq5" class="faq-question">
+                        Can scammers hack my devices? <span class="arrow">▼</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Yes, scammers can use malware or phishing links to gain access to your device. Avoid clicking on suspicious links or downloading unverified files.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq6">
+                    <label for="faq6" class="faq-question">
+                        What is a fake investment scam? <span class="arrow">▼</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Fake investment scams promise high returns with little or no risk. Always verify the legitimacy of investment opportunities before committing.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq7">
+                    <label for="faq7" class="faq-question">
+                        How do I report a scammer? <span class="arrow">▼</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>You can report scammers to your local authorities, anti-fraud organizations, or dedicated scam reporting websites.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq8">
+                    <label for="faq8" class="faq-question">
+                        What is identity theft? <span class="arrow">▼</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Identity theft is when someone steals your personal information to commit fraud or other crimes in your name.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq9">
+                    <label for="faq9" class="faq-question">
+                        What are the warning signs of a scam? <span class="arrow">▼</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Warning signs include unsolicited offers, requests for sensitive information, and demands for immediate payment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq10">
+                    <label for="faq10" class="faq-question">
+                        Are job offers over email trustworthy? <span class="arrow">▼</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Not always. Verify the company and avoid offers that require payment or sensitive details upfront.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 <strong>S.S.S</strong>. All rights reserved. | <a href="policy.html">Privacy Policy</a> | 
+            <a href="refrences.html">References</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #CFE5E7; 
+    color: #003366; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+ 
+header {
+    background: linear-gradient(to bottom, rgba(0, 79, 110, 0.8), rgba(0, 79, 110, 0.5)), center/cover no-repeat;
+    color: #5A7D9A; 
+    text-align: center;
+    padding: 40px 20px;
+}
+ 
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+ 
+p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+ 
+/* Container Styles */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+ 
+/* Service Section Styles */
+.service {
+    border-bottom: 2px solid #004F6E; 
+    padding: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+ 
+.service:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+ 
+.service:last-child {
+    border-bottom: none; 
+}
+ 
+.service h2 {
+    color: #5A7D9A; 
+    margin: 0;
+    font-size: 1.8em;
+}
+ 
+.service p {
+    color: #555; 
+    font-size: 1em;
+}
+ 
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004F6E; 
+    color: #ffffff; 
+    position: relative;
+    bottom:}
+    
+.explore-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    }
+   
+    .explore-button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    }
+
+   
+    .explore-button:active {
+    transform: translateY(1px);
+    }
+
+     
+    .navbar {
+        width: 100%;
+        background-color: rgba(0, 79, 110, 0.9); /* Semi-transparent dark blue */
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+    }
+     
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        max-width: 1200px;
+        margin: auto;
+    }
+     
+    .nav-logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+     
+    .nav-menu {
+        list-style-type: none;
+        display: flex;
+    }
+     
+    .nav-item {
+        margin-left: 1.5rem;
+    }
+     
+    .nav-link {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        position: relative;
+    }
+     
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background: #6BC1D1;
+        transition: width 0.3s ease-in-out;
+    }
+     
+    .nav-link:hover {
+        color: #6BC1D1;
+    }
+     
+    .nav-link:hover::after {
+        width: 100%;
+    }
+     
+    .nav-menu{
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+.nav-search {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 160px;
+}
+
+.search-button {
+    background-color: #9d9d9da2;
+    color: #333;
+    border: none;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+}
+
+.nav-menu{
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.search-button:hover {
+    background-color: #9d9d9da2;}
+
+  .navbar {
+    width: 100%;
+    background-color: #004F6E;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,147 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #CFE5E7;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+    .navbar {
+      width: 100%;
+      background-color: rgba(0, 79, 110, 0.9); 
+      color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+  }
+   
+  .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      max-width: 1200px;
+      margin: auto;
+  }
+   
+  .nav-logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+   
+  .nav-menu {
+      list-style-type: none;
+      display: flex;
+  }
+   
+  .nav-item {
+      margin-left: 1.5rem;
+  }
+   
+  .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      position: relative;
+  }
+   
+  .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0%;
+      height: 2px;
+      background: #6BC1D1;
+      transition: width 0.3s ease-in-out;
+  }
+   
+  .nav-link:hover {
+      color: #6BC1D1;
+  }
+   
+  .nav-link:hover::after {
+      width: 100%;
+  }
+   
+  .nav-menu{
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+.form-container {
+
+  background: linear-gradient(to bottom, rgba(0, 79, 110, 0.8), rgba(0, 79, 110, 0.5)), center/cover no-repeat;
+  padding: 20px 40px;
+  border-radius: 8px;
+  width: 400px;
+  margin-top:105px;
+}
+.form-container h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.form-container p {
+  font-size: 14px;
+  color: #cfcfcf;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #cfcfcf;
+  margin-bottom: 5px;
+}
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.form-group select {
+  padding: 8px;
+}
+
+.nav-menu{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contact {
+  background-color: white;
+  color: #004F6E;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  background-color: #004F6E;
+  color: white;
+  text-align: center;
+  margin-left: 115px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background: #004F6E; 
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;}

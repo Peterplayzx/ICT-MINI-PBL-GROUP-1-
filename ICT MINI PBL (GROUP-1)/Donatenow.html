@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .donation-container {
+            background-color: white;
+            padding: 30px;
+            max-width: 400px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .donation-container h1 {
+            font-size: 22px;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        .donation-container p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Tabbed Menu */
+        .tab-menu {
+            display: flex;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 10px 0;
+            font-weight: bold;
+            color: #555;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        input[name="tab"] {
+            display: none;
+        }
+
+        label.tab {
+            border-bottom: 2px solid transparent;
+        }
+
+        input[name="tab"]:checked + label.tab {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+        }
+
+        /* Donation Amounts */
+        .amount-options {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .amount-button {
+            padding: 10px 15px;
+            border: 2px solid #0056b3;
+            border-radius: 4px;
+            color: #0056b3;
+            font-weight: bold;
+            cursor: pointer;
+            flex: 1;
+            margin: 0 5px;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        input[name="amount"] {
+            display: none;
+        }
+
+        label.amount-button:hover,
+        input[name="amount"]:checked + label.amount-button {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        /* Donate Button */
+        .donate-now-button {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .donate-now-button:hover {
+            background-color: #e65a00;
+        }
+
+        /* Payment Icons */
+        .payment-icons {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .payment-icons img {
+            margin: 0 5px;
+            vertical-align: middle;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="donation-container">
+    <h1>A small act, a big impact. Donate now!</h1>
+    <p>Join us in doing whatever it takes to save and protect the world full of scammers.</p>
+
+    <!-- Tab Menu -->
+    <div class="tab-menu">
+        <input type="radio" name="tab" id="tab-monthly" checked>
+        <label for="tab-monthly" class="tab">Give Monthly</label>
+        <input type="radio" name="tab" id="tab-once">
+        <label for="tab-once" class="tab">Give Once</label>
+    </div>
+
+    <!-- Donation Amount Options -->
+    <div class="amount-options">
+        <input type="radio" name="amount" id="amount-10" checked>
+        <label for="amount-10" class="amount-button">USD10</label>
+        <input type="radio" name="amount" id="amount-25">
+        <label for="amount-25" class="amount-button">USD25</label>
+        <input type="radio" name="amount" id="amount-50">
+        <label for="amount-50" class="amount-button">USD50</label>
+        <input type="radio" name="amount" id="amount-other">
+        <label for="amount-other" class="amount-button">Other</label>
+    </div>
+
+    <!-- Donate Button -->
+    <button class="donate-now-button">DONATE</button>
+
+    <!-- Payment Icons -->
+    <div class="payment-icons">
+        <span>Secure payments by</span>
+        <img src="Images/visa.png" alt="Visa">
+    </div>
+</div>
+
+</body>
+</html>
